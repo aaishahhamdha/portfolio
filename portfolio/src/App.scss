@@ -1,0 +1,97 @@
+:root {
+  --background-color: #121212; /* Very Dark Gray */
+  --primary-accent: #d9c4a1; /* Steel Blue */
+  --secondary-accent: #4682b4; /* Cyan */
+  --text-primary: #FFFFFF; /* White */
+  --text-secondary: #B0B0B0; /* Light Gray */
+  --shadow-color: #00000077;
+  --surface-color: #1E1E1E; /* Dark Gray */
+  --border-color: #373737; /* Medium Dark Gray */
+  --border-color2: #373737; 
+  --bg-extra-color:#005577;
+  --mount-image: url('./assets/mount4.png');
+  --star-image: url('./assets/stars.png');
+  --gold:#dccfb9;
+  --secondary-accent2: #d9c4a1;
+
+}
+
+.light-theme{
+    --background-color: #FFFFFF; /* White */
+    --primary-accent: rgb(27, 89, 128); /* Steel Blue */
+    --secondary-accent:#4682b4 ; /* Light Cyan */
+    --text-primary: #121212; /* Very Dark Gray */
+    --text-secondary: #4A4A4A; /* Medium Gray */
+    --shadow-color: #b7d2dc99;
+    --surface-color: #F5F5F5; /* Light Gray */
+    --border-color: #bcbcbc; /* Light Gray */
+    --border-color2: #e9e9e9; /* Light Gray */
+    --bg-extra-color:#b1c4cb;
+    --mount-image: url('./assets/m4.png');
+    --star-image: url('./assets/cloud.png');
+    --gold:#aa936b;
+    --secondary-accent2:#ffffff;
+  
+  
+}
+.dark-theme {
+  --background-color: #121212; /* Very Dark Gray */
+  --primary-accent: #d9c4a1; /* Steel Blue */
+  --secondary-accent: #4682b4; /* Cyan */
+  --text-primary: #FFFFFF; /* White */
+  --text-secondary: #B0B0B0; /* Light Gray */
+  --highlight-color: #FF4081; /* Pink */
+  --surface-color: #1E1E1E; /* Dark Gray */
+  --border-color: #373737; /* Medium Dark Gray */
+  --mount-image: url('./assets/mount4.png');
+  --star-image: url('./assets/stars.png');
+  --gold:#dccfb9;
+  --secondary-accent2: #d9c4a1;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+.App {
+  background-color: var(--background-color);
+  overflow: hidden;
+  mix-blend-mode: overlay;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+html {
+ 
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  font-family: 'Jost',sans-serif;
+  scroll-padding-top: 7rem;
+  letter-spacing: 0.2px;
+
+}
+body{
+   
+  padding-top: 7rem;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+section {
+  background-image: linear-gradient( var(--bg-extra-color),var(--background-color),var(--background-color));
+
+  height: calc(100vh - 7rem);
+  scroll-snap-align: center;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+

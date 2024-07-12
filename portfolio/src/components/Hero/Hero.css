@@ -1,0 +1,177 @@
+.hero {
+    margin-left: 200px;
+    margin-right: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.image {
+    height: calc(100vh - 10rem);
+    position: relative;
+    right: auto;
+    top: 7rem;
+    right: 0;
+    flex: 1;
+}
+
+.blob1 {
+    left: 25%;
+    top: 12%;
+    position: absolute;
+    background-color: #3c5b6f47;
+    width: 40%;
+    height: 40%;
+    animation: animate 5s ease-in-out infinite;
+    transition: all 1s ease-in-out;
+}
+.blob2 {
+position: absolute;
+top: 25%;
+left: 60%;
+    background-color: #dfd0b880;
+    width: 67%;
+    height: 70%;
+    animation: animate2 5s ease-in-out infinite;
+    transition: all 1s ease-in-out;
+}
+
+.mypic{
+   position: absolute; 
+   top:-110px;
+   height: 107%;
+}
+
+@keyframes animate {
+    0%, 100% {
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    }
+    50% {
+        border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+    }
+}
+@keyframes animate2 {
+    0%, 100% {
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    }
+    70% {
+        border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+    }
+}
+
+
+.herotext {
+    flex: 1;
+    height: auto; /* Change from height: 100%; to height: auto; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 40px;
+    
+    
+}
+
+.t1 {
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    color: var( --text-secondary);
+}
+
+.myname {
+    letter-spacing: 10px;
+    color: var(--primary-accent);
+    font-size: 8rem;
+    line-height: 95%;
+    font-weight: 900;
+}
+
+.About>div{
+    font-size: 1.3rem;
+    background-color: var(  --surface-color);
+    border-radius: 0 20px 20px 0;
+    border-left: 5px solid  var(--secondary-accent);
+    padding: 2rem;
+    text-align: justify;
+    color:var( --text-secondary);
+    
+}
+
+.loaded-name {
+    animation: slideInName 0.7s ease-in;
+  }
+
+  
+  @keyframes slideInName {
+    0% {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  @keyframes slideIntext {
+    0% {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  .loaded-text {
+    animation: slideIntext 1s ease-in;
+  }
+  
+  
+  .loaded-img {
+    animation: slideInimg 1s ease-in;
+  }
+
+  
+  @keyframes slideInimg {
+    0% {
+      opacity: 0;
+      transform: translateX(100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  .loaded-about {
+    animation: slideInAbout 0.7s ease-in;
+  }
+  @keyframes slideInAbout {
+    0% {
+      opacity: 0;
+      transform: translateX(100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+
+
+ .Uni{
+  display: flex;
+  line-height: 90%;
+  font-size: 3rem;
+ }
+    
+ .Uni2{
+  line-height: 90%;
+  font-size: 1.5rem;
+ }
+
+
+    
+
+  

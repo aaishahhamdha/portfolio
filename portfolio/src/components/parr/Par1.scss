@@ -1,0 +1,48 @@
+.skillsPar{
+    
+    background-image: linear-gradient(var(--background-color),var(--bg-extra-color));
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: calc(100vh - 7rem);
+    margin-left: auto;
+    margin-right: auto;
+    color:   #dccfb9;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+    
+
+    .skill-title{
+        color: var(--primary-accent);
+        font-size:7rem;
+        z-index: 5;
+        text-shadow: 15px 15px 7px rgba(34, 34, 34, 0.503);
+     }
+     
+     .mount{
+         background-image: var(--mount-image);;
+         background-size: cover;
+         background-repeat: no-repeat;
+         background-position: bottom;
+         width: 100%;
+         height: 100%;
+         position: absolute;
+         z-index: 3;
+     }
+
+     .star{
+        background-image: var(--star-image);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: 2;
+        margin-top: 100px;
+     }
+}
