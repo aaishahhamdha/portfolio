@@ -1,12 +1,12 @@
 :root {
-  --background-color: #121212; /* Very Dark Gray */
-  --primary-accent: #d9c4a1; /* Steel Blue */
-  --secondary-accent: #4682b4; /* Cyan */
-  --text-primary: #FFFFFF; /* White */
-  --text-secondary: #B0B0B0; /* Light Gray */
+  --background-color: #121212; 
+  --primary-accent: #d9c4a1; 
+  --secondary-accent: #4682b4; 
+  --text-primary: #FFFFFF; 
+  --text-secondary: #B0B0B0; 
   --shadow-color: #00000077;
-  --surface-color: #1E1E1E; /* Dark Gray */
-  --border-color: #373737; /* Medium Dark Gray */
+  --surface-color: #1E1E1E; 
+  --border-color: #373737; 
   --border-color2: #373737; 
   --bg-extra-color:#005577;
   --mount-image: url('./assets/mount4.png');
@@ -17,15 +17,15 @@
 }
 
 .light-theme{
-    --background-color: #FFFFFF; /* White */
-    --primary-accent: rgb(27, 89, 128); /* Steel Blue */
-    --secondary-accent:#4682b4 ; /* Light Cyan */
-    --text-primary: #121212; /* Very Dark Gray */
-    --text-secondary: #4A4A4A; /* Medium Gray */
+    --background-color: #FFFFFF; 
+    --primary-accent: rgb(27, 89, 128);
+    --secondary-accent:#4682b4 ; 
+    --text-primary: #121212; 
+    --text-secondary: #4A4A4A; 
     --shadow-color: #b7d2dc99;
-    --surface-color: #F5F5F5; /* Light Gray */
-    --border-color: #bcbcbc; /* Light Gray */
-    --border-color2: #e9e9e9; /* Light Gray */
+    --surface-color: #F5F5F5; 
+    --border-color: #bcbcbc; 
+    --border-color2: #e9e9e9;
     --bg-extra-color:#b1c4cb;
     --mount-image: url('./assets/m4.png');
     --star-image: url('./assets/cloud.png');
@@ -35,14 +35,14 @@
   
 }
 .dark-theme {
-  --background-color: #121212; /* Very Dark Gray */
-  --primary-accent: #d9c4a1; /* Steel Blue */
-  --secondary-accent: #4682b4; /* Cyan */
-  --text-primary: #FFFFFF; /* White */
-  --text-secondary: #B0B0B0; /* Light Gray */
-  --highlight-color: #FF4081; /* Pink */
-  --surface-color: #1E1E1E; /* Dark Gray */
-  --border-color: #373737; /* Medium Dark Gray */
+  --background-color: #121212; 
+  --primary-accent: #d9c4a1;  
+  --secondary-accent: #4682b4;
+  --text-primary: #FFFFFF; 
+  --text-secondary: #B0B0B0; 
+  --highlight-color: #FF4081; 
+  --surface-color: #1E1E1E; 
+  --border-color: #373737; 
   --mount-image: url('./assets/mount4.png');
   --star-image: url('./assets/stars.png');
   --gold:#dccfb9;
@@ -51,6 +51,7 @@
 * {
   margin: 0;
   padding: 0;
+
 }
 .App {
   background-color: var(--background-color);
@@ -95,3 +96,25 @@ a {
 }
 
 
+ 
+@media screen and (max-width: 600px) {
+  section {
+    background-image: linear-gradient(var(--bg-extra-color), var(--background-color), var(--background-color));
+    width: 100%;
+    scroll-snap-align: center;
+    overflow-x: hidden;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: auto; 
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body{
+   
+    padding-top: 5rem;
+  }
+}

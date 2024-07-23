@@ -1,0 +1,412 @@
+.endorsements-section {
+  background-image: linear-gradient(var(--background-color), var(--bg-extra-color), var(--background-color));
+  color: var(--text-primary);
+  padding: 60px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 200px 200px 0 200px;
+  height: calc(100vh - 7rem - 200px);
+}
+
+.education-section {
+  flex: 1;
+  margin-right: 20px;
+  height: calc(100vh - 27rem);
+  background-color: var(--surface-color);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px var(--shadow-color);
+  position: relative;
+}
+
+.education-item {
+  padding-left: 30px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid var(--border-color);
+  padding-bottom: 20px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  border-radius: 20px;
+}
+
+.education-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px var(--shadow-color);
+  
+}
+
+.education-institution {
+  font-weight: bold;
+  color: var(--text-secondary);
+  font-size: 1.5em;
+  margin-bottom: 5px;
+  transition: color 0.3s;
+}
+
+
+.education-duration {
+  font-size: 1.2em;
+  color: var(--text-secondary);
+  margin-bottom: 10px;
+}
+
+.education-degree {
+  font-size: 1.3em;
+  margin: 10px 0;
+  font-weight: bold;
+  color: var(--text-secondary);
+}
+
+.education-gpa {
+  font-size: 1.2em;
+  color: var(--primary-accent);
+  font-weight: bold;
+  position: relative;
+  margin-top: 10px;
+}
+
+.gpa-highlight {
+  background: linear-gradient(90deg, var(--primary-accent),var(--bg-extra-color));
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.education-grades, .education-zscore {
+  color: var(--text-secondary);
+}
+
+.right-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  color: var(--primary-accent);
+  margin-bottom: 30px;
+  font-size: 2.5em;
+}
+
+.endorsement-container, .referrals-container {
+  margin-top: 20px;
+}
+
+.endorsement-list, .referral-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.endorsement-card {
+  width: 300px;
+  height: 200px;
+  perspective: 1000px;
+  position: relative;
+  transition: transform 0.6s;
+}
+
+.card-inner {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.endorsement-card:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front, .card-back {
+  width: 90%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 8px 16px var(--shadow-color);
+}
+
+.card-front {
+  background-color: var(--surface-color);
+  z-index: 2;
+  box-shadow: 0 4px 8px var(--shadow-color);
+  border: 1px solid var(--border-color);
+}
+
+.card-back {
+  background-color: var(--primary-accent);
+  color: var(--text-primary);
+  transform: rotateY(180deg);
+  z-index: 1;
+}
+
+.endorsement-message {
+  font-style: italic;
+  margin: 0;
+  font-size: 1.5rem;
+  color: var(--text-secondary);
+}
+
+.endorsement-name {
+  font-weight: bold;
+  font-size: 2rem;
+  color: var(--background-color);
+  margin-bottom: 10px;
+}
+
+.endorsement-role {
+  color: var(--surface-color);
+}
+
+.referral-list {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+.referral-item {
+  width: 40%;
+  background-color: var(--surface-color);
+  border: 1px solid var(--border-color);
+  border-radius: 15px;
+  box-shadow: 0 6px 12px var(--shadow-color);
+  margin-bottom: 15px;
+  padding: 20px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  position: relative;
+}
+
+.referral-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px var(--shadow-color);
+}
+
+.referral-name {
+  font-weight: bold;
+  color: var(--primary-accent);
+}
+
+.referral-role {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  font-weight: bold;
+}
+
+
+ 
+@media screen and (max-width: 600px){
+
+  .endorsements-section {
+    margin-top: 40px;
+    background-image: linear-gradient(var(--background-color), var(--bg-extra-color), var(--background-color));
+    color: var(--text-primary);
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px;
+    height: fit-content;
+  }
+  
+  .education-section {
+    height: fit-content;
+    background-color: var(--surface-color);
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px var(--shadow-color);
+    position: relative;
+    margin-right: 0;
+  
+  }
+  
+  .education-item {
+    padding-left: 10px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 15px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-radius: 20px;
+  }
+  
+  .education-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px var(--shadow-color);
+    
+  }
+  
+  .education-institution {
+    font-weight: bold;
+    color: var(--text-secondary);
+    font-size: 1rem;
+    margin-bottom: 5px;
+    transition: color 0.3s;
+  }
+  
+  
+  .education-duration {
+    font-size: 1rem;
+    color: var(--text-secondary);
+    margin-bottom: 10px;
+  }
+  
+  .education-degree {
+    font-size: 0.9rem;
+    margin: 10px 0;
+    font-weight: bold;
+    color: var(--text-secondary);
+  }
+  
+  .education-gpa {
+    font-size: 0.8rem;
+    color: var(--primary-accent);
+    font-weight: bold;
+    position: relative;
+    margin-top: 10px;
+  }
+  
+  .gpa-highlight {
+    background: linear-gradient(90deg, var(--primary-accent),var(--bg-extra-color));
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 1em;
+    font-weight: bold;
+  }
+  
+  .education-grades, .education-zscore {
+    color: var(--text-secondary);
+  }
+  
+  .right-section {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  h1 {
+    color: var(--primary-accent);
+    margin-bottom: 30px;
+    font-size: 1.3rem;
+  }
+  
+  .endorsement-container, .referrals-container {
+    margin-top: 20px;
+  }
+  
+  .endorsement-list, .referral-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+  }
+  
+  .endorsement-card {
+    width: 300px;
+    height: 200px;
+    margin: 10x;
+    perspective: 1000px;
+    position: relative;
+    transition: transform 0.6s;
+  }
+
+  
+  .card-inner {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .endorsement-card:hover .card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .card-front, .card-back {
+    width: 90%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 8px 16px var(--shadow-color);
+  }
+  
+  .card-front {
+    background-color: var(--surface-color);
+    z-index: 2;
+    box-shadow: 0 4px 8px var(--shadow-color);
+    border: 1px solid var(--border-color);
+  }
+  
+  .card-back {
+    background-color: var(--primary-accent);
+    color: var(--text-primary);
+    transform: rotateY(180deg);
+    z-index: 1;
+  }
+  
+  .endorsement-message {
+    font-style: italic;
+    margin: 0;
+    font-size: 1.2rem;
+    color: var(--text-secondary);
+  }
+  
+  .endorsement-name {
+    font-weight: bold;
+    font-size: 2rem;
+    color: var(--background-color);
+    margin-bottom: 10px;
+  }
+  
+  .endorsement-role {
+    color: var(--surface-color);
+  }
+  
+  .referral-list {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+  }
+  
+  .referral-item {
+    width: 70%;
+    background-color: var(--surface-color);
+    border: 1px solid var(--border-color);
+    border-radius: 15px;
+    box-shadow: 0 6px 12px var(--shadow-color);
+    margin-bottom: 15px;
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+  }
+  .end-title{
+  padding-left: 20px ;
+  }
+  
+  .referral-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px var(--shadow-color);
+  }
+  
+  .referral-name {
+    font-weight: bold;
+    color: var(--primary-accent);
+  }
+  
+  .referral-role {
+    color: var(--text-secondary);
+  }
+}

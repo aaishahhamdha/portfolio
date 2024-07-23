@@ -41,22 +41,6 @@ const projects = [
     link: '',
   },
 
-  {
-    id: 5,
-    imgsrc: sw2,
-    name: 'Chat with PDF',
-    description: 'An app to chat and extract data from PDF files',
-    tech: 'ReactJs, Python, SQLite, Ollama',
-    link: '',
-  },
-  {
-    id: 6,
-    imgsrc: sw2,
-    name: 'New',
-    description: 'E-Commerce website for a dress store',
-    tech: 'ReactJs, Python, MySQL',
-    link: '',
-  },
 ];
 
 const chunkArray = (array, chunkSize) => {
@@ -67,37 +51,32 @@ const chunkArray = (array, chunkSize) => {
   return result;
 };
 
-
-const cardopen=()=>{
-  
-}
-
 const Project = () => {
-  const chunkedProjects = chunkArray(projects, 4);
+  const chunkedProjects = chunkArray(projects, 4); 
+
   return (
     <section className='projects-area'>
       <div className='projects'>
-      {chunkedProjects.map((row, rowIndex) => (
-        <div className='row' key={rowIndex}>
-          {row.map(item => (
-            <div className='card' key={item.id} onClick={cardopen}>
-              <div className='title'>{item.name}</div>
-              <div className='image-card'>
-                <img src={item.imgsrc} alt={item.name} />
+        {chunkedProjects.map((row, rowIndex) => (
+          <div className='row' key={rowIndex}>
+            {row.map(item => (
+              <div className='card' key={item.id}>
+                <div className='title'>{item.name}</div>
+                <div className='image-card'>
+                  <img src={item.imgsrc} alt={item.name} />
+                </div>
+                <div className='description'>{item.description}</div>
+                <div className='technologies'>{item.tech}</div>
+                <div className='link'>
+                  <a href={item.link}>
+                    <LinkOutlined />
+                  </a>
+                </div>
               </div>
-              <div className='description'>{item.description}</div>
-              <div className='technologies'>{item.tech}</div>
-              <div className='link'>
-                <a href={item.link}>
-                  <LinkOutlined />
-                </a>
-              </div>
-            </div>
-          ))}
-        </div>
-      ))}
+            ))}
+          </div>
+        ))}
       </div>
-      
     </section>
   );
 };

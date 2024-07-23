@@ -26,7 +26,7 @@ const Contact = () => {
   };
 
   useEffect(() => {
-    const interval = setInterval(nextSlide, 3000);
+    const interval = setInterval(nextSlide, 2000);
     return () => clearInterval(interval);
   }, []);
 

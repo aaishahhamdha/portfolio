@@ -1,37 +1,187 @@
 .skills {
-  background-image: linear-gradient( var(--bg-extra-color),var(--surface-color),var(--surface-color));
+  background: var(--background-color);
+  font-size: 1.5rem;
+  font-weight: 500;
+  width: calc(100% - 300px);
+  height: calc(100vh - 7rem);
+  margin: 0 auto;
+  padding: 0 150px;
+  color: var(--text-primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.skills-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 2rem;
+}
+
+.tech, .prof {
+  width: 100%;
+  margin: 20px;
+  background: var(--surface-color);
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 4px 15px var(--shadow-color);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tech:hover, .prof:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 30px var(--shadow-color);
+}
+
+.tech h2, .prof h2 {
+  font-size: 2.5rem;
+  color: var(--primary-accent);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contttt {
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.col {
+  flex: 1;
+  padding: 10px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.col:hover {
+  transform: translateY(-10px);
+  background-color: var(--background-color);
+  border-radius: 10px;
+}
+
+.skillimg {
+  max-width: 100%;
+  height: 4rem;
+  width: 4rem;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease;
+  border-radius: 50%;
+}
+
+
+.progressbar {
+  background-color: var(--border-color);
+  border-radius: 13px;
+  padding: 3px;
+  margin-top: 10px;
+}
+
+.progress {
+  background-color: var(--secondary-accent);
+  height: 20px;
+  border-radius: 10px;
+}
+
+.prof {
+  color: var(--text-secondary);
+  font-size: 1.3rem;
+}
+
+.prof .col {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.prof .row {
+  background-color: var(--surface-color);
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.skillname {
+  text-align: left;
+  font-size: 1.2rem;
+}
+
+.hr {
+  border: 1px solid var(--border-color2);
+  margin: 40px 0;
+}
+
+@media (max-width: 768px) {
+  .skills {
+    padding: 0 20px;
+  }
+  
+  .skills-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tech, .prof {
+    width: 100%;
+  }
+
+  .col {
+    flex: 1;
+    padding: 5px;
+  }
+}
+
+ 
+@media screen and (max-width: 600px){
+  .skills {
+    background: var(--background-color);
     font-size: 1.5rem;
     font-weight: 500;
-    width: calc(100% - 300px); /* Subtracting 200px padding on each side */
-    height: calc(100vh - 7rem);
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 150px;
-    padding-right: 150px;
-    color: var(--primary-accent);
+    width:100%;
+    height: fit-content;
+    margin: 0 auto;
+    padding: 0 10px;
+    color: var(--text-primary);
     display: flex;
     justify-content: center;
     align-items: center;
   }
   
   .skills-container {
-    display: flex;
+
     justify-content: space-between;
-    width: 100%;
+    width: 80%;
+    gap: 2rem;
   }
   
-  .tech{
+  .tech, .prof {
+    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
     flex: 1;
-    margin: 20px;
+    width: 100vh;
+    background: var(--surface-color);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 15px var(--shadow-color);
+  
   }
-.prof {
-    flex: 1;
 
-  }
-  .tech h2{
-    padding-left: 1rem;
-    font-size: 2rem;
+.tech:hover, .prof:hover {
+  transform: scale(1);
+  box-shadow: 0 8px 30px var(--shadow-color);
+}
+  
+  
+  .tech h2, .prof h2 {
+    font-size: 1.5rem;
+    color: var(--primary-accent);
+    text-align: center;
+    margin-bottom: 20px;
   }
   
   .contttt {
@@ -39,22 +189,36 @@
   }
   
   .row {
-    display: flex;
-    margin-bottom: 20px;
-    justify-content: center;
+    display: inline;
+    justify-content: space-around;
+    height: fit-content;
+    font-size: 0.8rem;
   }
   
   .col {
+    display: block;
     flex: 1;
-
     padding: 10px;
     text-align: center;
+    transition: transform 0.3s ease;
+    font-size: 0.8rem;
+  }
+  
+  .col:hover {
+    transform: translateY(-10px);
+    background-color: var(--background-color);
+    border-radius: 10px;
   }
   
   .skillimg {
     max-width: 100%;
     height: 2rem;
+    width: 2rem;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+    border-radius: 50%;
   }
+  
   
   .progressbar {
     background-color: var(--border-color);
@@ -63,44 +227,58 @@
     margin-top: 10px;
   }
   
-   
   .progress {
     background-color: var(--secondary-accent);
-    height: 20px;
+    height: 10px;
     border-radius: 10px;
   }
   
   .prof {
-    margin-top: 1.1rem;
-    color: var(--text-primary);
+    color: var(--text-secondary);
     font-size: 1.3rem;
-  }
-  
-  .prof h2 {
-    color: var(--primary-accent);
-    padding-left: 3.5rem;
-    font-size: 2rem;
   }
   
   .prof .col {
     display: flex;
+    align-items: center;
+    font-size: 0.8rem;
   }
-  .prof .row{
-    margin: 50px;
-    background-color:#b0b0b05a;
+  
+  .prof .row {
+    background-color: var(--surface-color);
     border-radius: 10px;
-    margin-top: 60px;
+    font-size: 0.8rem;
   }
-
-  .skillname{
-    padding-left: 1.5rem;
+  
+  .skillname {
     text-align: left;
+    font-size: 0.8rem;
   }
-
-  .hr{
-    border:1px solid var(--border-color);
+  
+  .hr {
+    display: none;
   }
-
-
   
+  @media (max-width: 768px) {
+    .skills {
+      width: 100%;
+      padding: 0 20px;
+    }
+    
+    .skills-container {
+      flex-direction: column;
+      align-items: center;
+    }
   
+    .tech, .prof {
+      width: 100%;
+    }
+  
+    .col {
+      flex: 1;
+      padding: 5px;
+    }
+  }
+  
+
+}

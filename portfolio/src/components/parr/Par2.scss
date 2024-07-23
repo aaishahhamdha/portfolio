@@ -45,3 +45,23 @@
         margin-top: 100px;
      }
 }
+
+@media screen and (max-width: 600px) {
+   .projPar {
+     height: auto;
+     padding: 2rem 1rem;
+     flex-direction: column;
+     text-align: center;
+ 
+     .skill-title {
+      padding: 10px;
+      padding-top: 60px;
+       font-size: 3rem;
+       height: 13rem;
+       background-color: var(--shadow-color);
+       border-radius: 10px;
+     }
+ 
+ 
+   }
+ }

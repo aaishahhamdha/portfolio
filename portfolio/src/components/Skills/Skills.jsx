@@ -17,7 +17,6 @@ import criticalThinkingImg from '../../assets/crit.jpeg';
 import StressManagementImg from '../../assets/crit.jpeg';
 import TeamworkImg from '../../assets/com.jpeg';
 
-
 const chunkArray = (array, chunkSize) => {
   const result = [];
   for (let i = 0; i < array.length; i += chunkSize) {
@@ -34,6 +33,7 @@ const technicalSkills = [
   { id: 5, imgSrc: nImg, progress: 50 },
   { id: 6, imgSrc: sImg, progress: 70 },
   { id: 7, imgSrc: fImg, progress: 95 },
+
 ];
 
 const professionalSkills = [
