@@ -166,3 +166,115 @@ margin:0 -1.5rem 0 -1.5rem;
     display: none;
   }
 }
+
+
+@media screen and (min-width: 601px) and (max-width: 1100px) {
+  .cont {
+    background-image: linear-gradient(var(--background-color), var(--background-color), var(--bg-extra-color));
+    font-size: 1.5rem;
+    font-weight: 500;
+    width: 100%;
+    height: auto;
+    padding: 0 30px;
+    color: var(--primary-accent);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact-container {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+  }
+
+  form {
+    max-width: 80%;
+    width: 100%;
+    padding: 20px;
+  }
+
+  .images {
+    display: flex;
+    width: 70%;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 0;
+  }
+
+  .slide-image {
+    max-width: 100%;
+    height: auto;
+    border: 5px solid var(--border-color);
+    border-radius: 20px;
+  }
+
+  .but {
+    border: none;
+    background-color: transparent;
+    margin: 0 -1.5rem 0 -1.5rem;
+  }
+
+  .contact-form {
+    color: var(--primary-color);
+  }
+
+  .contact-form>span>.name,
+  .mail {
+    width: 42%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid var(--border-color2);
+    background-color: var(--border-color2);
+    border-radius: 5px;
+    color: var(--primary-color);
+  }
+
+  .contact-form>span>.mail {
+    margin-left: 4%;
+  }
+
+
+
+  .contact-form textarea {
+    width: 96%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid var(--border-color2);
+    background-color: var(--border-color2);
+    border-radius: 5px;
+    margin-top: 5px;
+    color: var(--primary-color);
+  }
+
+  .contact-form textarea {
+    height: 13rem;
+  }
+
+  .contact-form button {
+    width:90%;
+    padding: 10px 20px;
+    background-color: var(--primary-accent);
+    color: var(--background-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 96%;
+    margin-top: 5px;
+    height: 3rem;
+    font-size: 1.1rem;
+  }
+
+  .contact-form button:hover {
+    background-color: var(--secondary-accent);
+  }
+
+  .footer {
+
+    display: none;
+  
+  }
+}

@@ -13,7 +13,7 @@ const Hero = () => {
   useEffect(() => {
     if (isLoaded && contentRef.current) {
       const content = contentRef.current;
-      const text = "I am a self-motivated, quick-learning individual with a fervent interest in emerging technologies and creative problem-solving. I love taking on challenges and finding innovative solutions.Fascinated by the potential of technology to reshape our reality , I aspire to become a  Software Engineer. I firmly believe that daring to take the first step is the key to success";
+      const text = "A self-motivated, quick learner with a strong passion for emerging technologies and creative problem-solving. Love tackling challenges and finding innovative solutions. Aspiring to become a Software Engineer.";
       content.textContent = '';
       let charIndex = 0;
 

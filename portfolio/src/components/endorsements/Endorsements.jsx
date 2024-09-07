@@ -6,7 +6,7 @@ const educationDetails = [
     institution: "University of Moratuwa",
     duration: "2022-2026 (expected)",
     degree: "BSc Hons in Information Technology",
-    gpa: "GPA L2S1- 3.95/4.00 (Dean’s List)"
+    gpa: "SGPA 3.95/4.00"
   },
   {
     institution: "Ceylon Ladies’ Campus, Warakapola",
@@ -26,27 +26,43 @@ const educationDetails = [
 const endorsements = [
   {
     name: "",
-    message: "An exceptional talent with a remarkable work ethic. Highly recommended!",
-    role: "Emma Jane,Former Manager at XYZ Corp"
+    message: "Talented, Strong technical skills. She excels in problem-solving and teamwork",
+    role: "Neeshan Ismath,Software Project Team Leader"
   },
   {
-    name: "Jane Smith",
+    name: "",
     message: "A brilliant individual with innovative ideas and a great team player.",
-    role: " Jane Smith, Team Lead at ABC Inc."
+    role: " Sahla ASF, undergraduate @UoM"
   }
 ];
 
 const referrals = [
   {
-    name: "Dr. Supunmali Ahangama",
-    role: "Senior Lecturer, Faculty of Information Technology, University of Moratuwa President\n PhD (NUS), BSc (Hons) IT (Moratuwa)"
+    name: "Code Gladiators(2024)",
+    role: "Semi Finalist"
   },
   {
-    name: "Emily Davis",
-    role: "Tech Lead at GHI Co."
+    name: "FestX 4.0-IEE WIE(2023)",
+    role: "Participant"
   },
-  // Add more referrals as needed
+  {
+    name: "WebX-IEE WIE(2024)",
+    role: "Result Pending"
+  },
+  {
+    name: "HackMoral 6.0-INTECS(2024)",
+    role: "Ongoing"
+  },
+  {
+    name: "Hackelite 1.0 -IEE WIE(2024)",
+    role: "Ongoing"
+  },
+  {
+    name: "WSO2 Ballerina",
+    role: "Ongoing"
+  }
 ];
+
 
 const Endorsements = () => {
   return (
@@ -84,7 +100,7 @@ const Endorsements = () => {
           </div>
         </div>
         <div className="referrals-container">
-          <h1 className='end-title'>CV referees</h1>
+          <h1 className='end-title'>Competitions</h1>
           <ul className="referral-list">
             {referrals.map((referral, index) => (
               <li className="referral-item" key={index}>

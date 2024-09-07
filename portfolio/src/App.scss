@@ -50,7 +50,7 @@
 }
 * {
   margin: 0;
-  padding: 0;
+
 
 }
 .App {
@@ -113,6 +113,26 @@ a {
     padding: 0;
     box-sizing: border-box;
   }
+  body{
+   
+    padding-top: 5rem;
+  }
+}
+
+
+
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  section {
+    background-image: linear-gradient(var(--bg-extra-color), var(--background-color), var(--background-color));
+    width: 100%;
+    scroll-snap-align: center;
+    overflow-x: hidden;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: auto; 
+  }
+
+
   body{
    
     padding-top: 5rem;

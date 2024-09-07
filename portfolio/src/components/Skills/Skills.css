@@ -282,3 +282,125 @@
   
 
 }
+
+
+
+@media screen and (min-width: 601px) and (max-width: 1100px) {
+  .skills {
+    background: var(--background-color);
+    font-size: 1.2rem;
+    font-weight: 500;
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    padding: 0 20px;
+    color: var(--text-primary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .skills-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+  }
+  
+  .tech, .prof {
+    width: 100%;
+    margin: 20px auto;
+    background: var(--surface-color);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 15px var(--shadow-color);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .tech:hover, .prof:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 25px var(--shadow-color);
+  }
+  
+  .tech h2, .prof h2 {
+    font-size: 2rem;
+    color: var(--primary-accent);
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .contttt {
+    width: 100%;
+  }
+  
+  .row {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .col {
+    flex: 1 1 45%;
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    margin-bottom: 15px;
+  }
+  
+  .col:hover {
+    transform: translateY(-10px);
+    background-color: var(--background-color);
+    border-radius: 10px;
+  }
+  
+  .skillimg {
+    max-width: 100%;
+    height: 3rem;
+    width: 3rem;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+    border-radius: 50%;
+  }
+  
+  .progressbar {
+    background-color: var(--border-color);
+    border-radius: 13px;
+    padding: 3px;
+    margin-top: 10px;
+  }
+  
+  .progress {
+    background-color: var(--secondary-accent);
+    height: 15px;
+    border-radius: 10px;
+  }
+  
+  .prof {
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+  }
+  
+  .prof .col {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .prof .row {
+    background-color: var(--surface-color);
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  
+  .skillname {
+    text-align: left;
+    font-size: 1rem;
+  }
+  
+  .hr {
+    border: 1px solid var(--border-color2);
+    margin: 20px 0;
+  }
+}
